@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>exp</title>
+        <meta charset="UTF-8">
+        <mneta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+        <style>
+            table,th,td {
+                border: 1px solid black;
+                border-collapse: collapse;
+             }
+             th, td {
+                 padding: 10px;
+             }
+             th {
+                 text-align: left;
+             }
+             table#t01 {
+                 background-color: yellow;
+             }
+             .city{
+                 background-color: black;
+                 color: chartreuse;
+                 margin: 15px;
+                 padding: 10px;
+             }
+             .school{
+                 background-color: crimson;
+                 color: cyan;
+                 margin: 15px;
+                 padding: 15px;
+             }
+             .versity{
+                 background-color: blue;
+                 color: cornsilk;
+                 margin: 15px;
+                 padding: 15px;
+             }
+             span.note{
+                 font-size: 160%;
+                 color: blue;
+             }
+             {
+             box-sizing:border-box;
+             }
+             header
+             {
+               background-color: dimgrey;
+               font-size: 35px;
+               padding: 35px;
+               text-align: center;
+               color: fuchsia;
+             }
+             section {
+                 display: -webkit-box;
+                 display: flex;
+             }
+             nav{
+                 -webkit-box-flex: 1;
+                 -ms-flex: 1;
+                 flex: 1;
+                 background: gold;
+                 padding: 20px;
+             }
+             article{
+                 -webkit-box-flex: 3;
+                 -ms-flex: 3;
+                 flex: 3;
+                 background-color: cornflowerblue;
+                 color: darkblue;
+                 padding: 10px;
+             }
+             footer{
+                 background-color: darkred;
+                 color: floralwhite;
+                 padding: 10px;
+                 text-align: center;
+             }
+             @media(max-width: 600px;) {
+                 section {
+                     -webkit-flex-direction:column;
+                 }
+             }
+
+        </style>
+    </head>
+    <body style="background-color: chartreuse;">
+        <p style="color:red ;font-size:30px">"this is nothing..just checking</p>
+        <a href="https://www.google.com" target="_blank">go</a><br>
+        <img src="IMG_20191204_180015_113.jpg" alt="not intersted" style="width: auto;"><br>
+        <button>click me</button>
+        <ul style="color: red;">
+            <li><strong>milk</strong></li>
+            <li><b>coffe</b></li>
+            <li><i>tea</i></li>
+        </ul>
+        <ol>
+            <li style="font-size: 200%; border: rgb(15, 13, 13);">book</li>
+            <li>pen</li>
+            <li>phone</li>
+        </ol>
+        <pre style="text-align: center; color: rgb(12, 1, 20); border:10px tomato;">
+            I want to build a website.
+            I am <span class="note">trying</span> to figure out the <span style="color: red; font-size: 150%;">actual</span> way of building one.
+           <bdo dir="rtl"> So i have started to work on this regard.</bdo>
+        </pre>
+        <table style="width:80%" id="t01">
+            <caption>famous table</caption>
+            <tr>
+                <th>name</th>
+                <th colspan="2" style="text-align: center;">area</th>
+                <th>info</th>
+            </tr>
+            <tr>
+                <td>abir</td>
+                <td>khulna</td>
+                <td>legend</td>
+                <td>25662</td>
+            </tr>
+            <tr>
+                <td>logan</td>
+                <td>australia</td>
+                <td>wolverine</td>
+                <td>8492</td>
+            </tr>
+            <tr>
+                <td>Clark</td>
+                <td>usa</td>
+                <td>superman</td>
+                <td>89655</td>
+            </tr>
+        </table>
+        <div class="city">
+           <h3>khulna</h3>
+           <p>I live here.This is a quite place</p>
+        </div>
+        <div class="school">
+            <h3>KZS</h3>
+            <p>this is one of the most important place of my life</p>
+        </div>
+        <div class="versity">
+            <h3>KUET</h3>
+            <p>one of my worst decision</p>
+        </div>
+        <button type="button" onclick="document.getElementById('demo').innerHTML=Date()">Date and Time</button>
+        <p id="demo"></p>
+        <p id="ok">Hello, experiment is going on</p>
+        <script>
+            function myfunction() {
+                document.getElementById("ok").innerHTML="this is nothing";
+                document.getElementById("ok").style.fotSize="25px";
+                document.getElementById("ok").style.backgroundColor="green";
+                document.getElementById("ok").style.color="yellow";
+
+            }
+        </script>
+        <button type="button" onclick="myfunction()">click me</button>
+        <header>CITY</header>
+        <nav>
+            <a href="www.london.com">london</a><br>
+            <a href="www.newyork.com">New york</a><br>
+            <a href="www.khulna.com">Khulna</a>
+        </nav>
+        <article>London is a beautiful city. It has many tourist spots. There are also some wonderful restaurant located there.
+            The weather is also very nice. You will see lots of people coming from different culture have a great bond There
+        </article>
+        <footer>
+            END
+        </footer>
+      <form>
+          <fieldset style="align-content: center;">
+              <legend>personal information</legend><br>
+              <label for="fname">first name</label><br>
+              <input type="text" id="fname" name="fname"><br>
+              <label for="lname">last name</label><br>
+              <input type="text" id="lname" name="lname"><br>
+              <label for="roll">Roll</label><br>
+              <input type="number" id="roll" name="roll"><br>
+              <label for="pass">Password</label><br>
+              <input type="password" id="pass" name="pass"><br>
+              <input type="submit" value="submit">
+          </fieldset>
+      </form>
+      <form>
+          <input type="radio" id="male" name="gender" value="male">
+          <label for="male">Male</label>
+          <input type="radio" id="female" name="gender" value="female">
+          <label for="radio">FEmale</label>
+      </form>
+     <select id="mobile" name="mobile">
+         <option value="samsung">SAmsung</option>
+         <option value="iphone">Iphone</option>
+         <option value="xiaomi">xiaomi</option>
+     </select>
+
+
+    </body>
+    
+</html>
